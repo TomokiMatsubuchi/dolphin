@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- Japanese translation (draft). Untranslated on purpose: product names (Dolphin, Wii, GameCube, Android, Google Drive), technical identifiers conventionally shown in Latin script (Vulkan, OpenGL, MMU, JIT, HLE, LLE, DSP, EFB, XFB, FIFO, SDL, Wi-Fi), file paths and URLs, and pure-format strings. -->
+
+    <!-- Title of the app -->
+    <string name="app_name">Dolphin Emulator</string>
+    <string name="host">app</string>
+    <string name="scheme">dolphinemu</string>
+
+    <string name="none">なし</string>
+
+    <string name="controller_0">GameCubeコントローラー1</string>
+    <string name="controller_1">GameCubeコントローラー2</string>
+    <string name="controller_2">GameCubeコントローラー3</string>
+    <string name="controller_3">GameCubeコントローラー4</string>
+
+    <string name="wiimote_0">Wiiリモコン1</string>
+    <string name="wiimote_1">Wiiリモコン2</string>
+    <string name="wiimote_2">Wiiリモコン3</string>
+    <string name="wiimote_3">Wiiリモコン4</string>
+
+    <string name="wiimote_extension_0">Wiiリモコン拡張1</string>
+    <string name="wiimote_extension_1">Wiiリモコン拡張2</string>
+    <string name="wiimote_extension_2">Wiiリモコン拡張3</string>
+    <string name="wiimote_extension_3">Wiiリモコン拡張4</string>
+
+    <string name="real_balance_board">実機バランスWiiボード</string>
+
+    <string name="wiimote">Wiiリモコン</string>
+    <string name="wiimote_general">ボタン</string>
+    <string name="wiimote_motion_simulation">モーションシミュレーション</string>
+    <string name="wiimote_motion_input">モーション入力</string>
+    <string name="wiimote_extensions">拡張コントローラー</string>
+
+    <string name="input_device">デバイス</string>
+    <string name="input_device_all_devices">他のデバイス用の割り当てを作成</string>
+    <string name="input_device_all_devices_description">選択したデバイスだけでなく、すべてのデバイスからの入力を検出します。</string>
+    <string name="input_profile">プロファイル</string>
+    <string name="input_profiles_empty">まだプロファイルを作成していません。</string>
+    <string name="input_profiles">プロファイル</string>
+    <string name="input_profile_new">(新規プロファイル)</string>
+    <string name="input_profile_load">読み込み</string>
+    <string name="input_profile_save">保存</string>
+    <string name="input_profile_delete">削除</string>
+    <string name="input_profile_confirm_load">現在のコントローラー設定を破棄して、プロファイル「%1$s」を読み込みますか?</string>
+    <string name="input_profile_confirm_save">プロファイル「%1$s」を上書きしますか?</string>
+    <string name="input_profile_confirm_delete">プロファイル「%1$s」を削除しますか?</string>
+    <string name="input_reset_to_default">デフォルト</string>
+    <string name="input_reset_to_default_description">このコントローラーの設定をデフォルトに戻します。</string>
+    <string name="input_clear">消去</string>
+    <string name="input_clear_description">このコントローラーの設定を消去します。</string>
+    <string name="input_reset_warning">本当によろしいですか? 現在のコントローラー設定は削除されます。</string>
+    <string name="keyboard_controller_warning">"ここでは「キーボードコントローラー」を設定しています。このデバイスは「Phantasy Star Online Episode I &amp; II」専用です。よくわからない場合は、今すぐ戻って「標準コントローラー」を設定してください。</string>
+    <string name="old_controller_settings">コントローラー設定が古いバージョンのDolphinのもので、このバージョンでは動作しません。「デフォルト」を押して新しい設定をやり直してください。</string>
+
+    <string name="input_binding">入力の割り当て</string>
+    <string name="input_binding_description">入力を押すか動かして、%1$sに割り当てます。</string>
+    <string name="input_binding_no_device">先にデバイスを選択する必要があります。</string>
+    <string name="input_binding_disconnected_device">選択したデバイスが切断されています。\n\nデバイスを再接続するか、別のデバイスを選択してください。</string>
+    <string name="input_configure_input">入力の設定</string>
+    <string name="input_configure_output">出力の設定</string>
+    <string name="input_expression">式</string>
+
+    <!-- Main Preference Fragment -->
+    <string name="settings">設定</string>
+    <string name="search_settings">設定を検索</string>
+    <string name="search_settings_back">設定に戻る</string>
+    <string name="search_settings_no_results">「%1$s」に一致する設定が見つかりません</string>
+    <string name="search_settings_category_path">%1$s › %2$s</string>
+    <string name="game_settings">ゲーム設定: %1$s</string>
+    <string name="config">構成</string>
+    <string name="graphics_settings">グラフィック設定</string>
+    <string name="gcpad_settings">GameCube入力</string>
+    <string name="wiimote_settings">Wii入力</string>
+
+    <!-- General Preference Fragment -->
+    <string name="general_submenu">一般</string>
+    <string name="dual_core">デュアルコア (高速化)</string>
+    <string name="dual_core_description">処理を1つではなく2つのCPUコアに分散します。速度が向上します。</string>
+    <string name="enable_cheats">チートを有効にする</string>
+    <string name="speed_limit">速度制限 (0% = 無制限)</string>
+    <string name="overclock_warning">警告: この設定をデフォルト (100%) から変更すると、ゲームが正常に動作しなくなり、不具合が発生します。デフォルト以外のクロックで発生したバグは報告しないでください。</string>
+    <string name="achievements_submenu">RetroAchievements</string>
+    <string name="gamecube_submenu">GameCube</string>
+    <string name="ipl_settings">IPL設定</string>
+    <string name="skip_main_menu">メインメニューをスキップ</string>
+    <string name="skip_main_menu_description">IPL ROMをUser/GC/&lt;region&gt;に配置してください</string>
+    <string name="device_settings">デバイス設定</string>
+    <string name="system_language">システム言語</string>
+    <string name="slot_a_device">GameCubeスロットAデバイス</string>
+    <string name="slot_b_device">GameCubeスロットBデバイス</string>
+    <string name="serial_port_1_device">GameCubeシリアルポート1デバイス</string>
+    <string name="gba_settings">GBA設定</string>
+    <string name="gba_bios_path">BIOS</string>
+    <string name="gb_player_rom">Game Boy Player ROM</string>
+    <string name="gba_saves_path">セーブデータ</string>
+    <string name="wii_submenu">Wii</string>
+    <string name="wii_misc_settings">その他の設定</string>
+    <string name="wii_sd_card_settings">SDカード設定</string>
+    <string name="wii_wiimote_settings">Wiiリモコン設定</string>
+    <string name="wii_widescreen">ワイドスクリーン</string>
+    <string name="wii_widescreen_description">対応ゲームのアスペクト比を4:3から16:9に変更します。</string>
+    <string name="wii_pal60">PAL60モード (EuRGB60) を使用</string>
+    <string name="wii_pal60_description">対応するPALゲームのリフレッシュレートを50 Hzから60 Hzに変更します。</string>
+    <string name="wii_screensaver">スクリーンセーバーを有効にする</string>
+    <string name="wii_screensaver_description">5分間操作がないと画面を暗くします。</string>
+    <string name="wii_enable_wiilink">WiiLink経由でWiiConnect24を有効にする</string>
+    <string name="wii_enable_wiilink_description">WiiConnect24チャンネル向けのWiiLinkサービスを有効にします。利用規約は https://www.wiilink24.com/tos をご覧ください</string>
+    <string name="sound_mode">サウンド</string>
+    <string name="insert_sd_card">SDカードを挿入</string>
+    <string name="insert_sd_card_description">SDとSDHCに対応しています。デフォルトのサイズは128 MBです。</string>
+    <string name="wii_sd_card_allow_writes">SDカードへの書き込みを許可</string>
+    <string name="wii_sd_card_sync">フォルダーと自動的に同期</string>
+    <string name="wii_sd_card_sync_description">エミュレーションの開始時と終了時に、SDカードをSD同期フォルダーと同期します。</string>
+    <string name="wii_sd_card_path">SDカードのパス</string>
+    <string name="wii_sd_sync_folder">SD同期フォルダー</string>
+    <string name="wii_sd_card_folder_to_file">今すぐSDカードにパック</string>
+    <string name="wii_sd_card_folder_to_file_confirmation">SD同期フォルダーの内容をSDカードファイルにパックしようとしています。ファイルの現在の内容はすべて削除されます。続行してもよろしいですか?</string>
+    <string name="wii_sd_card_file_to_folder">今すぐSDカードを展開</string>
+    <string name="wii_sd_card_file_to_folder_confirmation">SDカードファイルの内容をSD同期フォルダーに展開しようとしています。フォルダーの現在の内容はすべて削除されます。続行してもよろしいですか?</string>
+    <string name="wii_converting">変換中…</string>
+    <string name="wii_convert_success">変換が完了しました。</string>
+    <string name="wii_convert_failure">変換に失敗しました。</string>
+    <string name="wiimote_rumble">Wiiリモコンの振動</string>
+    <string name="wiimote_volume">Wiiリモコンのスピーカー音量</string>
+    <string name="sensor_bar_sensitivity">センサーバーの感度</string>
+    <string name="sensor_bar_position">センサーバーの位置</string>
+    <string name="wiimote_scanning">Wiiリモコンの連続スキャン</string>
+    <string name="wiimote_scanning_description">実機のWiiリモコンをDolphinBarで使用する場合はオンにしてください。</string>
+    <string name="wiimote_speaker">Wiiリモコンのスピーカー</string>
+    <string name="wiimote_speaker_description">実機のWiiリモコンのスピーカーから音声を出力します (DolphinBarが必要)。</string>
+    <string name="override_region_settings">地域設定の不一致を許可</string>
+    <string name="auto_disc_change">ディスクを自動的に切り替える</string>
+    <string name="fallback_region">フォールバック地域</string>
+    <string name="enable_save_states">セーブステートを有効にする</string>
+    <string name="enable_save_states_description">警告: セーブステートは将来のバージョンのDolphinと互換性がない可能性があり、場合によっては通常のセーブデータを作成できなくなることがあります。セーブステートを進行状況の保存手段としてのみ使用しないでください。</string>
+    <string name="analytics">使用状況の統計レポートを有効にする</string>
+    <string name="analytics_desc">許可した場合、Dolphinはパフォーマンス、機能の使用状況、構成に関するデータや、お使いのシステムのハードウェアとオペレーティングシステムに関するデータを収集できます。\n\n個人情報は一切収集しません。このデータは、ユーザーやエミュレートされたゲームがDolphinをどのように利用しているかを把握し、開発の優先順位を決めるのに役立ちます。また、バグやパフォーマンス、安定性の問題を引き起こすまれな構成の特定にも役立ちます。この許可はDolphinの設定からいつでも取り消せます。</string>
+    <string name="analytics_new_id">新しい統計IDを生成</string>
+    <string name="analytics_new_id_confirmation">新しい統計IDを生成してもよろしいですか?</string>
+
+    <!-- SerialPort1 Subsetting Fragment -->
+    <string name="serialport1_submenu">シリアルポート1</string>
+    <string name="xlink_kai_guide_header">セットアップ手順は<a href="https://www.teamxlink.co.uk/wiki/Dolphin">こちらのページ</a>をご覧ください。
+    </string>
+    <string name="xlink_kai_bba_ip">XLink KaiのIPアドレス/ホスト名</string>
+    <string name="xlink_kai_bba_ip_description">XLink Kaiクライアントを実行しているデバイスのIPアドレスまたはホスト名</string>
+    <string name="bba_tapserver_destination">Tapserverの接続先</string>
+    <string name="bba_tapserver_destination_description">Tapserverインスタンスのソケットパスまたはnetloc (アドレス:ポート) を入力してください</string>
+    <string name="modem_tapserver_destination">Tapserverの接続先</string>
+    <string name="modem_tapserver_destination_description">Tapserverインスタンスのソケットパスまたはnetloc (アドレス:ポート) を入力してください</string>
+    <string name="bba_builtin_dns">DNSサーバー</string>
+    <string name="bba_builtin_dns_description">通常のDNSには8.8.8.8を使用し、それ以外の場合は独自のものを入力してください</string>
+    <string name="triforce_ip_redirections">IPリダイレクト</string>
+
+    <!-- Interface Preference Fragment -->
+    <string name="interface_submenu">インターフェース</string>
+    <string name="emulation_screen_orientation">エミュレーション中の画面の向き</string>
+    <string name="expand_to_cutout_area">カメラ穴領域まで拡張</string>
+    <string name="expand_to_cutout_area_description">表示領域をカメラ穴 (ノッチ) 領域まで拡張します。</string>
+    <string name="panic_handlers">パニックハンドラーを使用</string>
+    <string name="panic_handlers_description">重大なエラーが発生した可能性があるときにメッセージボックスを表示します。無効にすると煩わしい非致命的なメッセージを避けられますが、重大なクラッシュの原因がまったく表示されなくなることがあります。</string>
+    <string name="osd_messages">オンスクリーン表示メッセージを表示</string>
+    <string name="osd_messages_description">エミュレーション画面にメッセージを重ねて表示します。これらのメッセージには、メモリーカードへの書き込み、ビデオバックエンドとCPUの情報、JITキャッシュのクリアが含まれます。</string>
+    <string name="time_tracking">プレイ時間の記録を有効にする</string>
+    <string name="time_tracking_description">ゲームをプレイした時間を記録し、ゲームの詳細に表示します。</string>
+    <string name="download_game_covers">GameTDB.comからゲームカバーをダウンロード</string>
+    <string name="show_titles_in_game_list">タイトルを表示</string>
+    <string name="change_theme">アプリのテーマを変更</string>
+    <string name="change_theme_mode">テーマモードを変更</string>
+    <string name="use_black_backgrounds">黒い背景を使用</string>
+    <string name="use_black_backgrounds_description">ダークテーマ使用時に背景を黒くします。</string>
+
+    <!-- Online Update Region Select Fragment -->
+    <string name="region_select_title">地域を選択してください</string>
+
+    <!-- Online Update Progress Bar Fragment -->
+    <string name="updating">更新中</string>
+    <string name="updating_message">タイトル%016xを更新しています…\n時間がかかる場合があります。</string>
+    <string name="update_success">エミュレートされたWii本体が更新されました。</string>
+    <string name="already_up_to_date">エミュレートされたWii本体はすでに最新です。</string>
+    <string name="region_mismatch">ゲームの地域が本体の地域と一致しません。システムメニューの問題を避けるため、このディスクを使ってエミュレートされた本体を更新することはできません。</string>
+    <string name="missing_update_partition">ゲームディスクに使用可能な更新情報が含まれていません。</string>
+    <string name="disc_read_failed">ゲームディスクに使用可能な更新情報が含まれていません。</string>
+    <string name="server_failed">"任天堂から更新情報をダウンロードできませんでした。インターネット接続を確認して、もう一度お試しください。</string>
+    <string name="download_failed">任天堂から更新ファイルをダウンロードできませんでした。インターネット接続を確認して、もう一度お試しください。</string>
+    <string name="import_failed">"Wiiのシステムメモリーに更新をインストールできませんでした。詳しくはログを確認してください。</string>
+    <string name="update_cancelled">更新がキャンセルされました。システムソフトウェアのバージョンが不一致になることを避けるため、更新を最後まで完了することを強くおすすめします。</string>
+    <string name="update_cancelling">更新がキャンセルされるまでお待ちください。</string>
+    <string name="update_success_title">更新が完了しました</string>
+    <string name="update_failed_title">更新に失敗しました</string>
+    <string name="update_cancelled_title">更新がキャンセルされました</string>
+
+    <!-- Audio Settings -->
+    <string name="audio_submenu">オーディオ</string>
+    <string name="dsp_emulation_engine">DSPエミュレーションエンジン</string>
+    <string name="audio_buffer_size">オーディオバッファサイズ</string>
+    <string name="audio_buffer_size_description">バッファリングするオーディオサンプル数を制御します。値を小さくすると遅延が減りますが、ノイズや途切れが増えることがあります。わからない場合は80 msに設定してください。</string>
+    <string name="audio_fill_gaps">オーディオの空白を埋める</string>
+    <string name="audio_fill_gaps_description">ラグ発生時に既存のオーディオを繰り返して途切れを防ぎます。わからない場合はチェックを入れたままにしてください。</string>
+    <string name="audio_preserve_pitch">オーディオのピッチを維持</string>
+    <string name="audio_preserve_pitch_description">エミュレーション速度を変更してもオーディオのピッチを通常のまま保ちます。これがない場合、オーディオのピッチは速度に比例して変化します。わからない場合はチェックを外したままにしてください。</string>
+    <string name="audio_volume">オーディオ音量</string>
+
+    <!-- Path Settings -->
+    <string name="paths_submenu">パス</string>
+    <string name="search_subfolders">ゲームファイルをサブフォルダーから検索</string>
+    <string name="default_ISO">デフォルトISO</string>
+    <string name="wii_NAND_root">Wii NANDルート</string>
+    <string name="dump_path">ダンプパス</string>
+    <string name="load_path">読み込みパス</string>
+    <string name="resource_pack_path">リソースパックのパス</string>
+    <string name="wfs_path">WFSパス</string>
+
+    <!-- Graphics Settings -->
+    <string name="graphics_general">一般</string>
+    <string name="graphics_more_settings">詳細</string>
+
+    <!-- Video Preference Fragment -->
+    <string name="video_backend">ビデオバックエンド</string>
+    <string name="video_backend_description">グラフィック描画に使用するAPIを選択します。</string>
+    <string name="enhancements_submenu">エンハンスメント</string>
+    <string name="internal_resolution">内部解像度</string>
+    <string name="internal_resolution_description">描画に使用する解像度を指定します。高い解像度にすると画質は大幅に向上しますが、パフォーマンスへの負荷も大きく、一部のゲームで不具合が発生することがあります。</string>
+    <string name="FSAA">フルシーンアンチエイリアス</string>
+    <string name="FSAA_description">3Dグラフィックのラスタライズで発生するエイリアスを軽減します。これにより描画された画像のギザギザが目立たなくなります。エミュレーション速度が大幅に低下し、問題が発生することがあります。</string>
+    <string name="anisotropic_filtering">異方性フィルタリング</string>
+    <string name="anisotropic_filtering_description">斜めから見たテクスチャの画質を向上させます。少数のゲームで問題が発生することがあります。</string>
+    <string name="texture_filtering">テクスチャフィルタリング</string>
+    <string name="texture_filtering_description">ゲームが選択したテクスチャスケーリングフィルターを上書きします。「デフォルト」以外のオプションを選ぶとゲームのテクスチャの見た目が変わり、少数のゲームで問題が発生することがあります。</string>
+    <string name="post_processing_shader">ポストプロセッシングエフェクト</string>
+    <string name="post_processing_shader_description">フレームの描画完了後にポストプロセッシングエフェクトを適用します</string>
+    <string name="postprocessing_shader">ポストプロセッシングシェーダー</string>
+    <string name="postprocessing_shader_description">フレームの描画完了後にポストプロセッシングエフェクトを適用します。</string>
+    <string name="scaled_efb_copy">EFBコピーのスケーリング</string>
+    <string name="scaled_efb_copy_description">レンダー・トゥ・テクスチャ効果で生成されるテクスチャの品質が大幅に向上します。内部解像度を上げるとこの設定の効果が高まります。パフォーマンスがわずかに低下し、問題が発生する可能性があります (可能性は低いです)。</string>
+    <string name="per_pixel_lighting">ピクセル単位ライティング</string>
+    <string name="per_pixel_lighting_description">3Dグラフィックのライティングを頂点単位ではなくピクセル単位で計算します。エミュレーション速度が数% (GPUによって異なります) 低下します。通常は安全なエンハンスメントですが、問題が発生することがあります。</string>
+    <string name="force_texture_filtering">テクスチャフィルタリングを強制</string>
+    <string name="force_texture_filtering_description">エミュレートされたゲームが明示的に無効にしていてもテクスチャフィルタリングを強制します。テクスチャ品質がわずかに向上しますが、一部のゲームで不具合が発生します。</string>
+    <string name="force_24bit_color">24ビットカラーを強制</string>
+    <string name="force_24bit_color_description">ゲームのRGBカラーチャンネルを24ビットで描画するよう強制し、カラーバンディングを軽減して品質を向上させます。\nパフォーマンスへの影響はなく、グラフィックの問題もほとんど発生しません。わからない場合はチェックを入れたままにしてください。</string>
+    <string name="disable_fog">フォグを無効にする</string>
+    <string name="disable_fog_description">フォグを除去して遠くのオブジェクトを見えやすくし、全体的なディテールを向上させます。フォグを無効にすると、適切なフォグのエミュレーションに依存する一部のゲームが正常に動作しなくなります。</string>
+    <string name="disable_copy_filter">コピーフィルターを無効にする</string>
+    <string name="disable_copy_filter_description">EFBのコピー時に隣接する行をブレンドする処理を無効にします。一部のゲームではこれを「デフリッカー」や「スムージング」と呼びます。通常はフィルターを無効にしても安全で、より鮮明な画像になることがあります。</string>
+    <string name="arbitrary_mipmap_detection">任意のミップマップ検出</string>
+    <string name="arbitrary_mipmap_detection_description">一部のゲームが距離に応じた特殊な効果に使用する任意のミップマップの検出を有効にします。\n内部解像度を上げたときにテクスチャがぼやける誤検出が発生することがあります (非常に低解像度のミップマップを使用するゲームなど)。これを無効にすると、新しいテクスチャを頻繁に読み込むゲームのスタッターを軽減できることもあります。\n\nわからない場合はチェックを外したままにしてください。</string>
+    <string name="color_correction_submenu">色補正</string>
+    <string name="color_space">色空間</string>
+    <string name="correct_color_space">色空間を補正</string>
+    <string name="correct_color_space_description">GC/Wiiが想定していた色空間の色をsRGB/Rec.709に変換します。</string>
+    <string name="game_color_space">ゲームの色空間</string>
+    <string name="ntscm_space">NTSC-M (SMPTE 170M)</string>
+    <string name="ntscj_space">NTSC-J (ARUB TR-89)</string>
+    <string name="pal_space">PAL (EBU)</string>
+    <string name="gamma">ガンマ</string>
+    <string name="game_gamma">ゲームのガンマ</string>
+    <string name="game_gamma_description">NTSC-MとNTSC-Jの目標ガンマは約2.2です。PALの目標ガンマは約2.8です。\nゲームやテレビが必ずしもこのどちらかに従っているわけではありません。2.35はすべての地域で使える汎用的な値です。\nゲームでガンマ値を選択できる場合は、それに合わせてここを設定してください。</string>
+    <string name="correct_sdr_gamma">SDRガンマを補正</string>
+    <string name="sdr_display_gamma_target">SDRディスプレイの目標ガンマ</string>
+    <string name="custom_gamma_target">カスタム目標ガンマ</string>
+    <string name="stereoscopy_submenu">ステレオスコピック3D</string>
+    <string name="stereoscopy_submenu_description">必要なハードウェアがあれば、ステレオスコピック3Dで奥行きをより感じられます。\nエミュレーション速度が大幅に低下し、問題が発生することがあります</string>
+    <string name="wide_screen_hack">ワイドスクリーンハック</string>
+    <string name="wide_screen_hack_description">ゲームから任意のアスペクト比でグラフィックを出力するよう強制します。4:3専用のゲームを16:9で動作させるには、「アスペクト比」を「16:9を強制」に設定して使用してください。良好な結果が得られることはまれで、グラフィックやゲームUIが部分的に壊れることがよくあります。\nARコード/Geckoコードのワイドスクリーンパッチを使用している場合は不要 (かつ有害) です。わからない場合はチェックを外したままにしてください。</string>
+    <string name="stereoscopy_mode">ステレオスコピックモード</string>
+    <string name="stereoscopy_mode_description">ステレオスコピック3Dモードを選択します。</string>
+    <string name="stereoscopy_depth">奥行き</string>
+    <string name="stereoscopy_depth_description">仮想カメラ間の距離を制御します。\n値を大きくすると奥行き感が強くなり、小さくすると快適になります。</string>
+    <string name="stereoscopy_convergence">輻輳</string>
+    <string name="stereoscopy_convergence_description">輻輳面の距離を制御します。これはオブジェクトが画面の手前に見える距離です。\n値を大きくすると画面から飛び出す効果が強くなり、小さくすると快適になります。</string>
+    <string name="stereoscopy_swap_eyes">左右の目を入れ替える</string>
+    <string name="stereoscopy_swap_eyes_description">左右の目を入れ替えます。主にサイドバイサイドを寄り目で見たい場合に便利です。</string>
+
+    <string name="hacks_submenu">ハック</string>
+    <string name="embedded_frame_buffer">埋め込みフレームバッファ</string>
+    <string name="skip_efb_access">CPUからのEFBアクセスをスキップ</string>
+    <string name="skip_efb_access_description">CPUからのEFBへの読み書き要求を無視します。</string>
+    <string name="ignore_format_changes">フォーマットの変更を無視</string>
+    <string name="ignore_format_changes_description">EFBフォーマットへの変更を無視します。</string>
+    <string name="efb_copy_method">EFBコピーをテクスチャのみに保存</string>
+    <string name="efb_copy_method_description">システムメモリーを経由せず、EFBコピーをGPUのみに保存します。少数のゲームでグラフィックの不具合が発生します。わからない場合はチェックを入れたままにしてください。</string>
+    <string name="defer_efb_copies">EFBコピーをRAMへ遅延保存</string>
+    <string name="defer_efb_copies_description">EFBコピーの内容をRAMに書き込む前に、ゲームがエミュレートされたGPUと同期するまで待機します。パフォーマンスが向上することがあります。わからない場合はチェックを外したままにしてください。</string>
+    <string name="texture_cache">テクスチャキャッシュ</string>
+    <string name="texture_cache_accuracy">テクスチャキャッシュの精度</string>
+    <string name="texture_cache_accuracy_description">より安全な選択ほど、RAMからのテクスチャ更新を見落とす可能性が低くなります。</string>
+    <string name="gpu_texture_decoding">GPUテクスチャデコード</string>
+    <string name="gpu_texture_decoding_description">対応している場合はコンピュートシェーダーを使ってGPUでテクスチャをデコードします。状況によってはパフォーマンスが向上することがあります。</string>
+    <string name="external_frame_buffer">外部フレームバッファ</string>
+    <string name="xfb_copy_method">XFBコピーをテクスチャのみに保存</string>
+    <string name="xfb_copy_method_description">システムメモリーを経由せず、XFBコピーをGPUのみに保存します。メモリーからの読み戻しが必要な少数のゲームでグラフィックの不具合が発生します。わからない場合はチェックを入れたままにしてください。</string>
+    <string name="immediate_xfb">XFBを即座に表示</string>
+    <string name="immediate_xfb_description">スキャンアウトを待たず、XFBコピーを生成され次第表示します。一部のゲームでグラフィックの不具合が発生しますが、遅延が減少します。わからない場合はチェックを外したままにしてください。</string>
+    <string name="skip_duplicate_xfbs">重複フレームの表示をスキップ</string>
+    <string name="skip_duplicate_xfbs_description">重複フレームの表示をスキップします。ローエンドデバイスでパフォーマンスが向上することがありますが、フレームペーシングの一貫性が低下します。わからない場合はチェックを入れたままにしてください。</string>
+    <string name="fast_depth_calculation">高速深度計算</string>
+    <string name="fast_depth_calculation_description">精度の低いアルゴリズムで深度値を計算します。一部のゲームで問題が発生しますが、ゲームやGPUによってはかなりの速度向上が期待できます。わからない場合はチェックを入れたままにしてください。</string>
+    <string name="disable_bbox">バウンディングボックスを無効にする</string>
+    <string name="disable_bbox_description">バウンディングボックスのエミュレーションを無効にします。GPUパフォーマンスが大幅に向上することがありますが、一部のゲームが正常に動作しなくなります。わからない場合はチェックを入れたままにしてください。</string>
+    <string name="vertex_rounding">頂点の丸め</string>
+    <string name="vertex_rounding_description">2D頂点を整数ピクセルに、ビューポートサイズを整数に丸めます。内部解像度を上げたときに一部のゲームで発生するグラフィックの問題を修正します。この設定はネイティブ内部解像度を使用しているときは効果がありません。わからない場合はチェックを外したままにしてください。</string>
+    <string name="vi_skip">VBIスキップ</string>
+    <string name="vi_skip_description">ラグを検出したときに垂直帰線割り込みをスキップし、エミュレーション速度が100%でないときもオーディオを滑らかに再生できるようにします。フリーズや互換性の問題を引き起こすことがあります。</string>
+    <string name="texture_cache_to_state">テクスチャキャッシュをステートに保存</string>
+    <string name="texture_cache_to_state_description">埋め込みフレームバッファ (EFB) の内容とアップスケールされたEFBコピーをセーブステートに含めます。ステート読み込み時にテクスチャやオブジェクトが欠落したりアップスケールされなかったりする問題を修正しますが、保存/読み込み時間が増加します。</string>
+    <string name="aspect_ratio">アスペクト比</string>
+    <string name="aspect_ratio_description">描画時に使用するアスペクト比を選択します</string>
+    <string name="shader_compilation_mode">シェーダーコンパイルモード</string>
+    <string name="wait_for_shaders">起動前にシェーダーをコンパイル</string>
+    <string name="wait_for_shaders_description">ゲーム起動時に遅延が発生しますが、序盤のスタッターを軽減できます。</string>
+
+    <string name="statistics_submenu">統計</string>
+    <string name="show_fps">FPSを表示</string>
+    <string name="show_fps_description">毎秒描画される個別フレーム数を、映像の滑らかさの指標として表示します。</string>
+    <string name="show_ftimes">フレーム時間を表示</string>
+    <string name="show_ftimes_description">描画された各フレーム間の平均時間 (ms) と標準偏差を表示します。</string>
+    <string name="show_vps">VPSを表示</string>
+    <string name="show_vps_description">毎秒描画されるフレーム数を、エミュレーション速度の指標として表示します。</string>
+    <string name="show_vtimes">VBlank時間を表示</string>
+    <string name="show_vtimes_description">描画された各フレーム間の平均時間 (ms) と標準偏差を表示します。</string>
+    <string name="show_graphs">パフォーマンスグラフを表示</string>
+    <string name="show_graphs_description">エミュレーションのパフォーマンスを表す統計とともにフレーム時間グラフを表示します。</string>
+    <string name="performance_sample_window">パフォーマンス計測時間</string>
+    <string name="performance_sample_window_description">FPSとVPSカウンターが計測する時間の長さです。値を大きくするほどFPS/VPSカウンターは安定しますが、更新が遅くなります。</string>
+    <string name="show_speed">速度%を表示</string>
+    <string name="show_speed_description">全速に対するエミュレーションの速度%を表示します。</string>
+    <string name="show_speed_colors">速度の色分けを表示</string>
+    <string name="show_speed_colors_description">エミュレーション速度に応じてFPSカウンターの色を変更します。</string>
+    <string name="log_render_time_to_file">描画時間をファイルに記録</string>
+    <string name="log_render_time_to_file_description">各フレームの描画時間をUser/Logs/render_time.txtに記録します。この機能を使ってDolphinのパフォーマンスを測定できます。</string>
+
+    <string name="advanced_graphics_submenu">詳細設定</string>
+    <string name="gfx_mods_and_custom_textures">グラフィックMODとカスタムテクスチャ</string>
+    <string name="gfx_mods">グラフィックMOD</string>
+    <string name="gfx_mods_description">User/Load/GraphicsMods/からグラフィックMODを読み込みます。</string>
+    <string name="load_custom_texture">カスタムテクスチャを読み込む</string>
+    <string name="load_custom_texture_description">User/Load/Textures/&lt;game_id&gt;/とUser/Load/DynamicInputTextures/&lt;game_id&gt;/からカスタムテクスチャを読み込みます。</string>
+    <string name="cache_custom_texture">カスタムテクスチャを先読み</string>
+    <string name="cache_custom_texture_description">起動時にカスタムテクスチャをシステムRAMにキャッシュします。指数関数的に多くのRAMを必要とすることがありますが、起こりうるスタッターを修正します。</string>
+    <string name="dump_texture">テクスチャをダンプ</string>
+    <string name="dump_texture_description">他のフラグに基づいてデコードされたゲームテクスチャをUser/Dump/Textures/&lt;game_id&gt;/にダンプします。わからない場合はチェックを外したままにしてください。</string>
+    <string name="dump_base_texture">ベーステクスチャをダンプ</string>
+    <string name="dump_base_texture_description">ベースとなるゲームテクスチャをUser/Dump/Textures/&lt;game_id&gt;/にダンプするかどうか。</string>
+    <string name="dump_mip_texture">ミップマップをダンプ</string>
+    <string name="dump_mip_texture_description">ミップマップ付きのゲームテクスチャをUser/Dump/Textures/&lt;game_id&gt;/にダンプするかどうか。</string>
+    <string name="misc">その他</string>
+    <string name="crop">クロップ</string>
+    <string name="crop_to_aspect_ratio">アスペクト比に合わせる</string>
+    <string name="crop_to_aspect_ratio_description">画像をネイティブのアスペクト比から4:3または16:9にクロップします。わからない場合はチェックを外したままにしてください。</string>
+    <string name="crop_custom">カスタム</string>
+    <string name="crop_custom_description">ユーザー指定の目標アスペクト比に合わせるため、画像をネイティブのピクセル単位で (内部解像度設定とは無関係に) クロップするオプションを有効にします。レターボックス問題の解決に便利です。わからない場合はチェックを外したままにしてください。</string>
+    <string name="crop_custom_top">カスタム上部</string>
+    <string name="crop_custom_top_description">ユーザー指定の目標アスペクト比に合わせるため、画像の上端をネイティブのピクセル単位で (内部解像度設定とは無関係に) クロップします。わからない場合はこの値を0のままにしてください。</string>
+    <string name="crop_custom_bottom">カスタム下部</string>
+    <string name="crop_custom_bottom_description">ユーザー指定の目標アスペクト比に合わせるため、画像の下端をネイティブのピクセル単位で (内部解像度設定とは無関係に) クロップします。わからない場合はこの値を0のままにしてください。</string>
+    <string name="crop_custom_left">カスタム左側</string>
+    <string name="crop_custom_left_description">ユーザー指定の目標アスペクト比に合わせるため、画像の左端をネイティブのピクセル単位で (内部解像度設定とは無関係に) クロップします。わからない場合はこの値を0のままにしてください。</string>
+    <string name="crop_custom_right">カスタム右側</string>
+    <string name="crop_custom_right_description">ユーザー指定の目標アスペクト比に合わせるため、画像の右端をネイティブのピクセル単位で (内部解像度設定とは無関係に) クロップします。わからない場合はこの値を0のままにしてください。</string>
+    <string name="progressive_scan">プログレッシブスキャンを有効にする</string>
+    <string name="vsync">V-Sync</string>
+    <string name="vsync_description">Androidは常にV-Syncを有効にするため、ほとんどのAndroidデバイスではこの設定は不要です。わからない場合はチェックを外したままにしてください。</string>
+    <string name="backend_multithreading">バックエンドのマルチスレッド</string>
+    <string name="backend_multithreading_description">グラフィックバックエンドのマルチスレッド (Vulkanのみ) を有効にします。パフォーマンスに影響することがあります。わからない場合はチェックを入れたままにしてください。</string>
+    <string name="prefer_vs_for_point_line_expansion">点/線の拡張にVSを優先</string>
+    <string name="prefer_vs_for_point_line_expansion_description">点と線の拡張にジオメトリシェーダーと頂点シェーダーの両方に対応するバックエンドで、頂点シェーダーを選択します。パフォーマンスに影響することがあります。</string>
+    <string name="cpu_cull">CPUで頂点をカリング</string>
+    <string name="cpu_cull_description">CPUで頂点をカリングして、必要なドローコール数を減らします。パフォーマンスに影響することがあります。わからない場合はチェックを外したままにしてください。</string>
+    <string name="defer_efb_invalidation">EFBキャッシュの無効化を遅延</string>
+    <string name="defer_efb_invalidation_description">GPU同期コマンドが実行されるまでEFBアクセスキャッシュの無効化を遅延させます。安定性と引き換えに一部のゲームでパフォーマンスが向上することがあります。わからない場合はチェックを外したままにしてください。</string>
+    <string name="manual_texture_sampling">手動テクスチャサンプリング</string>
+    <string name="manual_texture_sampling_description">グラフィックバックエンド内蔵の機能ではなく、手動実装のテクスチャサンプリングを使用します。</string>
+    <string name="internal_resolution_dumps">内部解像度でフレームをダンプ</string>
+    <string name="frame_dumping">フレームダンプ</string>
+    <string name="internal_resolution_dumps_description">表示されているウィンドウのサイズではなく、レンダラーの内部解像度でフレームダンプとスクリーンショットを作成します。アスペクト比がワイドスクリーンの場合、垂直解像度を保つために出力画像が水平方向に拡大されます。</string>
+    <string name="png_compression_level">PNG圧縮レベル</string>
+    <string name="debugging">デバッグ</string>
+    <string name="wireframe">ワイヤーフレームを有効にする</string>
+    <string name="show_stats">統計を表示</string>
+    <string name="show_proj_stats">投影統計を表示</string>
+    <string name="show_internal_resolution">XFB解像度を表示</string>
+    <string name="texture_format">テクスチャフォーマットのオーバーレイ</string>
+    <string name="validation_layer">API検証レイヤーを有効にする</string>
+    <string name="dump_efb">EFBターゲットをダンプ</string>
+    <string name="dump_xfb">XFBターゲットをダンプ</string>
+    <string name="disable_vram_copies">EFBのVRAMコピーを無効にする</string>
+    <string name="leave_this_unchecked">わからない場合はチェックを外したままにしてください。</string>
+
+    <!-- Advanced Settings -->
+    <string name="advanced_submenu">詳細設定</string>
+    <string name="cpu_options">CPUオプション</string>
+    <string name="cpu_core">CPUコア</string>
+    <string name="mmu_enable">MMUを有効にする</string>
+    <string name="mmu_enable_description">メモリー管理ユニットを有効にします。一部のゲームに必要ですが、パフォーマンスが低下することがあります。</string>
+    <string name="pause_on_panic">パニック時に一時停止</string>
+    <string name="pause_on_panic_description">読み取り/書き込みまたは不明な命令のパニックが発生したときにエミュレーションを一時停止します。パフォーマンスへの影響はMMUを有効にする場合と同じです。</string>
+    <string name="enable_cpu_cache">ライトバックキャッシュを有効にする (低速)</string>
+    <string name="enable_cpu_cache_description">CPUのライトバックキャッシュのエミュレーションを有効にします。有効にするとパフォーマンスに大きな影響があります。本当に必要な場合を除き、無効のままにしてください。</string>
+    <string name="clock_override">クロックの上書き</string>
+    <string name="overclock_enable">エミュレートされたCPUクロック速度を上書き</string>
+    <string name="overclock_enable_description">エミュレーション速度が全速でもフレームレートが不安定なゲームでは、値を大きくするとパフォーマンスが向上することがあります (強力なデバイスが必要です)。値を小さくするとエミュレートされた本体のパフォーマンスは低下しますが、エミュレーション速度は向上します。</string>
+    <string name="overclock_title">エミュレートされたCPUクロック速度</string>
+    <string name="overclock_title_description">「エミュレートされたCPUクロック速度を上書き」が有効な場合、エミュレートされたCPUのクロックレートを調整します。</string>
+    <string name="memory_override">メモリーの上書き</string>
+    <string name="enable_memory_size_override">エミュレートされたメモリーサイズの上書きを有効にする</string>
+    <string name="enable_memory_size_override_description">エミュレートされた本体のRAM容量を指定した値に設定します。\n\n警告: これを有効にすると多くのゲームが完全に動作しなくなります。デフォルトでは、Dolphinはゲーム情報に基づいて必要な値を判断します。</string>
+    <string name="main_mem1_size">MEM1サイズ</string>
+    <string name="main_mem2_size">MEM2サイズ</string>
+    <string name="gpu_options">GPUオプション</string>
+    <string name="vi_overclock_enable">VBI周波数を上書き</string>
+    <string name="vi_overclock_enable_description">ゲームを異なるフレームレートで動作させ、値を下げるとエミュレーションの負荷が減り、上げると滑らかになります。フレームレートに連動することが多いため、ゲームプレイの速度に影響することがあります。</string>
+    <string name="vi_overclock_title">VBI周波数</string>
+    <string name="vi_overclock_title_description">「VBI周波数を上書き」が有効な場合、VBI周波数レートを調整します。\nまた、エミュレートされたCPUのクロック速度も相対的に同じになるよう調整します。</string>
+    <string name="synchronize_gpu_thread">GPUスレッドを同期</string>
+    <string name="synchronize_gpu_thread_description">GPUスレッドを同期すると、デュアルコア有効時にゲームがクラッシュしたり不安定になったりするリスクが減りますが、デュアルコアによるパフォーマンス向上も小さくなることがあります。わからない場合は「アイドルスキップ時」を選択してください。「しない」は危険でありおすすめしません!</string>
+    <string name="custom_rtc_options">カスタムRTCオプション</string>
+    <string name="custom_rtc_enable">カスタムRTCを有効にする</string>
+    <string name="custom_rtc_description">この設定では、現在のシステム時刻とは別にカスタムのリアルタイムクロック (RTC) を設定できます。</string>
+    <string name="set_custom_rtc">カスタムRTCを設定</string>
+    <string name="select_rtc_date">RTCの日付を選択</string>
+    <string name="select_rtc_time">RTCの時刻を選択</string>
+    <string name="misc_settings">その他の設定</string>
+    <string name="emulate_disc_speed">ディスク速度をエミュレート</string>
+    <string name="emulate_disc_speed_description">エミュレートされたディスク速度を有効にします。無効にすると一部のゲームでクラッシュやその他の問題が発生することがあります。</string>
+
+    <!-- Log Configuration -->
+    <string name="log_submenu">ログ</string>
+    <string name="log_to_file">ログをファイルに書き込む</string>
+    <string name="log_to_file_description">有効なログタイプのメッセージをLogsフォルダーに記録します。パフォーマンスが低下します。</string>
+    <string name="log_verbosity">詳細度</string>
+    <string name="log_enable_all">すべてのログタイプを有効にする</string>
+    <string name="log_enable_all_confirmation">すべてのログタイプを有効にしてもよろしいですか?</string>
+    <string name="log_disable_all">すべてのログタイプを無効にする</string>
+    <string name="log_disable_all_confirmation">すべてのログタイプを無効にしてもよろしいですか?</string>
+    <string name="log_clear">ログファイルを消去</string>
+    <string name="log_clear_confirmation">ログファイルを消去してもよろしいですか?</string>
+    <string name="log_types">ログタイプ</string>
+
+    <!-- Debug -->
+    <string name="debug_submenu">デバッグ</string>
+    <string name="debug_warning">警告: デバッグ設定はエミュレーションを遅くします</string>
+    <string name="debug_fastmem">Fastmemを無効にする</string>
+    <string name="debug_page_table_fastmem">ページテーブルFastmemを無効にする</string>
+    <string name="debug_fastmem_arena">Fastmemアリーナを無効にする</string>
+    <string name="debug_large_entry_points_map">ラージエントリポイントマップを無効にする</string>
+    <string name="debug_jit_profiling_header">Jitプロファイリング</string>
+    <string name="debug_jit_enable_block_profiling">Jitブロックプロファイリングを有効にする</string>
+    <string name="debug_jit_wipe_block_profiling_data">Jitブロックプロファイリングデータを消去</string>
+    <string name="debug_jit_wipe_block_profiling_data_alert">JITブロックプロファイリングデータを再初期化しますか?</string>
+    <string name="debug_jit_write_block_log_dump">Jitブロックログダンプを書き込む</string>
+    <string name="debug_jit_header">Jit</string>
+    <string name="debug_jitoff">Jit無効</string>
+    <string name="debug_jitloadstoreoff">Jitロードストア無効</string>
+    <string name="debug_jitloadstorefloatingoff">Jitロードストア浮動小数点無効</string>
+    <string name="debug_jitloadstorepairedoff">Jitロードストアペア無効</string>
+    <string name="debug_jitfloatingpointoff">Jit浮動小数点無効</string>
+    <string name="debug_jitintegeroff">Jit整数無効</string>
+    <string name="debug_jitpairedoff">Jitペア無効</string>
+    <string name="debug_jitsystemregistersoff">Jitシステムレジスタ無効</string>
+    <string name="debug_jitbranchoff">Jitブランチ無効</string>
+    <string name="debug_jitregistercacheoff">Jitレジスタキャッシュ無効</string>
+
+    <!-- User Data -->
+    <string name="user_data_submenu">ユーザーデータ</string>
+    <string name="user_data_old_location">ユーザーデータ (設定、セーブデータなど) は、アプリをアンインストールしても<b>削除されない</b>場所に保存されています:</string>
+    <string name="user_data_new_location">ユーザーデータ (設定、セーブデータなど) は、アプリをアンインストールすると<b>削除される</b>場所に保存されています:</string>
+    <!-- Android 10 and up support android:hasFragileUserData -->
+    <string name="user_data_new_location_android_10">ユーザーデータ (設定、セーブデータなど) は、デフォルトでアプリをアンインストールすると<b>削除される</b>場所に保存されています:</string>
+    <string name="user_data_new_location_android_11">Android 11以降を使用しているため、ファイルマネージャーアプリは通常のフォルダーと同じ方法でこのフォルダーにアクセスできません。代わりにDolphinがファイルプロバイダーとして機能します。</string>
+    <string name="user_data_open_system_file_manager">システムのファイルマネージャーを開く</string>
+    <string name="user_data_open_user_folder">ユーザーデータフォルダーを開く</string>
+
+    <string name="user_data_import">ユーザーデータをインポート</string>
+    <string name="user_data_export">ユーザーデータをエクスポート</string>
+    <string name="user_data_open_system_file_manager_failed">申し訳ありません。Dolphinはお使いのデバイスでシステムのファイルマネージャーを見つけられませんでした。</string>
+    <string name="user_data_import_warning">ユーザーデータをこのファイルのデータに置き換えてもよろしいですか? 既存のユーザーデータはすべて削除されます!</string>
+    <string name="user_data_import_invalid_file">このファイルにはDolphinのユーザーデータが含まれていないようです。</string>
+    <string name="user_data_import_success">ユーザーデータをインポートしました。</string>
+    <string name="user_data_import_failure">ユーザーデータのインポートに失敗しました。</string>
+
+    <string name="user_data_export_success">ユーザーデータをエクスポートしました。</string>
+    <string name="user_data_export_failure">ユーザーデータのエクスポートに失敗しました。</string>
+    <string name="reset_dolphin_settings">Dolphinの設定をリセット</string>
+    <string name="reset_all_settings">すべての設定をリセット</string>
+    <string name="reset_dolphin_settings_confirmation">Dolphinのすべての設定をデフォルト値に戻してもよろしいですか? この操作は元に戻せません!\n行ったすべてのカスタマイズや変更は失われます。\n\n続行しますか?</string>
+
+    <!-- Miscellaneous -->
+    <string name="yes">はい</string>
+    <string name="no">いいえ</string>
+    <string name="ok">OK</string>
+    <string name="off">オフ</string>
+    <string name="cancel">キャンセル</string>
+    <string name="cancelling">キャンセル中…</string>
+    <string name="clear">消去</string>
+    <string name="disabled">無効</string>
+    <string name="other">その他</string>
+    <string name="continue_anyway">そのまま続行</string>
+    <string name="more_settings">その他の設定</string>
+    <string name="advanced_settings">詳細設定</string>
+
+    <!-- Game Grid Screen-->
+    <string name="platform_gamecube">GameCubeゲーム</string>
+    <string name="platform_wii">Wiiゲーム</string>
+    <string name="platform_wiiware">WiiWareゲーム</string>
+    <string name="add_games">ゲームを追加</string>
+    <string name="add_directory_title">ライブラリにフォルダーを追加</string>
+    <string name="grid_menu_settings">設定</string>
+    <string name="grid_menu_grid_options">グリッドオプション</string>
+    <string name="grid_menu_refresh">ライブラリを更新</string>
+    <string name="grid_menu_open_file">ファイルを開く</string>
+    <string name="grid_menu_install_wad">WADをインストール</string>
+    <string name="grid_menu_import_wii_save">Wiiセーブデータをインポート</string>
+    <string name="grid_menu_import_nand_backup">BootMii NANDバックアップをインポート</string>
+    <string name="grid_menu_online_system_update">オンラインシステム更新を実行</string>
+    <string name="grid_menu_netplay">ネットプレイ</string>
+    <string name="grid_menu_load_wii_system_menu">Wiiシステムメニューを起動</string>
+    <string name="grid_menu_load_wii_system_menu_installed">Wiiシステムメニューを起動 (%s)</string>
+    <string name="grid_menu_load_vwii_system_menu_installed">vWiiシステムメニューを起動 (%s)</string>
+    <string name="grid_menu_about">このアプリについて</string>
+    <string name="import_in_progress">インポート中…</string>
+    <string name="export_in_progress">エクスポート中…</string>
+    <string name="do_not_close_app">アプリを閉じないでください!</string>
+    <string name="wad_install_success">このタイトルをNANDにインストールしました。</string>
+    <string name="wad_install_failure">このタイトルをNANDにインストールできませんでした。</string>
+    <string name="wii_save_exists">このタイトルのセーブデータはすでにNANDに存在します。上書きする前に現在のデータをバックアップすることをおすすめします。\n今すぐ上書きしますか?</string>
+    <string name="wii_save_import_success">セーブファイルをインポートしました。</string>
+    <string name="wii_save_import_error">セーブファイルのインポートに失敗しました。NANDが壊れているか、NAND内のファイルへのアクセスが妨げられている可能性があります。</string>
+    <string name="wii_save_import_corruped_source">セーブファイルのインポートに失敗しました。指定されたファイルは壊れているか、有効なWiiセーブデータではないようです。</string>
+    <string name="wii_save_import_title_missing">セーブファイルのインポートに失敗しました。ゲームを一度起動してから、もう一度お試しください。</string>
+    <string name="nand_import_warning">現在選択されているNANDに新しいNANDをマージすると、すでに存在するチャンネルやセーブデータが上書きされます。この処理は元に戻せないため、両方のNANDのバックアップを保管することをおすすめします。続行してもよろしいですか?</string>
+    <string name="system_menu_not_installed_title">インストールされていません</string>
+    <string name="system_menu_not_installed_message">Wiiメニューがインストールされていません。今すぐインストールしますか?\n\n約110 MiBのデータをインターネットからダウンロードします。Wi-Fi接続を推奨します。</string>
+
+    <!-- Game Properties Screen -->
+    <string name="properties_details">詳細</string>
+    <string name="properties_start_with_riivolution">Riivolutionパッチで起動</string>
+    <string name="properties_set_default_iso">デフォルトISOに設定</string>
+    <string name="properties_convert">ファイルを変換</string>
+    <string name="properties_system_update">システム更新を実行</string>
+    <string name="properties_edit_game_settings">ゲーム設定を編集</string>
+    <string name="properties_edit_cheats">チートを編集</string>
+    <string name="properties_clear_game_settings">ゲーム設定とチートを消去</string>
+    <string name="properties_clear_game_settings_confirmation">このゲームのゲーム固有設定とチートをすべて削除してもよろしいですか?</string>
+    <string name="properties_clear_success">%1$sの設定を消去しました</string>
+    <string name="properties_clear_failure">%1$sの設定を消去できませんでした</string>
+    <string name="properties_clear_missing">削除するゲーム設定がありません</string>
+    <string name="preferences_save_exit">保存して終了</string>
+    <string name="preferences_game_properties">ゲームのプロパティ</string>
+    <string name="preferences_game_properties_with_game_id">ゲームのプロパティ: %1$s</string>
+    <string name="game_ini_junk_title">不要なデータが見つかりました</string>
+    <string name="game_ini_junk_question">このゲームの設定ファイルに、古いバージョンのDolphinが追加した余分なデータが含まれています。これにより、グローバル設定が意図したとおりに機能しない可能性があります。\n\nこのゲームの設定ファイルを削除して修正しますか? 追加したゲーム固有設定とチートはすべて削除されます。この操作は元に戻せません。</string>
+
+    <!-- Game Details Screen -->
+    <string name="game_details_time_played">プレイ時間 %1$d時間%2$d分</string>
+    <string name="game_details_country">国</string>
+    <string name="game_details_company">会社</string>
+    <string name="game_details_game_id">ゲームID</string>
+    <string name="game_details_revision">リビジョン</string>
+    <string name="game_details_file_size">ファイルサイズ</string>
+    <string name="game_details_file_format">ファイル形式</string>
+    <string name="game_details_compression">圧縮</string>
+    <string name="game_details_block_size">ブロックサイズ</string>
+    <string name="game_details_no_compression">圧縮なし</string>
+    <string name="game_details_size_and_format">%1$s (%2$s)</string>
+
+    <!-- Cheats Screen -->
+    <string name="cheats">チート</string>
+    <string name="cheats_with_game_id">チート: %1$s</string>
+    <string name="cheats_header_ar">ARコード</string>
+    <string name="cheats_header_gecko">Geckoコード</string>
+    <string name="cheats_header_patch">パッチ</string>
+    <string name="cheats_header_graphics_mod">グラフィックMOD</string>
+    <string name="cheats_add_ar">新しいARコードを追加</string>
+    <string name="cheats_add_gecko">新しいGeckoコードを追加</string>
+    <string name="cheats_add_patch">新しいパッチを追加</string>
+    <string name="cheats_download_gecko">Geckoコードをダウンロード</string>
+    <string name="cheats_name">名前</string>
+    <string name="cheats_creator">作成者</string>
+    <string name="cheats_notes">メモ</string>
+    <string name="cheats_code">コード</string>
+    <string name="cheats_edit">編集</string>
+    <string name="cheats_delete">削除</string>
+    <string name="cheats_delete_confirmation">「%1$s」を削除してもよろしいですか?</string>
+    <string name="cheats_error_no_name">名前を空にすることはできません</string>
+    <string name="cheats_error_no_code_lines">コードを空にすることはできません</string>
+    <string name="cheats_error_on_line">%1$d行目でエラー</string>
+    <string name="cheats_error_mixed_encryption">行はすべて暗号化されているか、すべて復号されている必要があります</string>
+    <string name="cheats_downloading">ダウンロード中…</string>
+    <string name="cheats_download_failed">コードのダウンロードに失敗しました。</string>
+    <string name="cheats_download_empty">ファイルにコードが含まれていませんでした。</string>
+    <string name="cheats_download_succeeded">%1$d件のコードをダウンロードしました。(%2$d件を追加)</string>
+    <string name="cheats_disabled_warning">Dolphinのチートシステムは現在無効です。</string>
+    <string name="gfx_mods_disabled_warning">グラフィックMODは現在無効です。</string>
+    <string name="cheats_open_settings">設定</string>
+
+    <!-- Convert Screen -->
+    <string name="convert_format">形式</string>
+    <string name="convert_block_size">ブロックサイズ</string>
+    <string name="convert_compression">圧縮</string>
+    <string name="convert_compression_level">圧縮レベル</string>
+    <string name="convert_remove_junk_data">不要なデータを削除 (元に戻せません)</string>
+    <string name="convert_convert">変換</string>
+    <string name="convert_converting">変換中</string>
+    <string name="convert_warning_iso">不要なデータを削除しても、ISOに変換する場合は容量を節約できません (変換後にISOファイルをZIPなどの圧縮形式でまとめる場合を除きます)。それでも続行しますか?</string>
+    <string name="convert_warning_gcz">Wiiディスクイメージを不要なデータを削除せずにGCZに変換しても、ISOに変換する場合と比べて目立つ容量の節約にはなりません。それでも続行しますか?</string>
+    <string name="convert_warning_nkit">DolphinはNKitファイルをNKit以外のファイルに変換できません。DolphinでNKitファイルを変換すると、別のNKitファイルになります。\n\nNKitファイルをNKit以外のファイルに変換したい場合は、最初にそのファイルをNKit形式に変換したときと同じプログラムを使用してください。\n\nそれでも続行しますか?</string>
+    <string name="convert_success_message">ディスクイメージの変換に成功しました。</string>
+    <string name="convert_failure_message">Dolphinは要求された操作を完了できませんでした。</string>
+    <string name="convert_format_info">
+ISO: 多くのプログラムで対応している、シンプルで堅牢な形式です。他のどの形式よりも
+多くの容量を使用します。
+\n\nGCZ: ほとんどのバージョンのDolphinといくつかのプログラムで対応している、基本的な圧縮形式です。
+不要なデータ (削除されている場合を除く) や暗号化されたWiiデータを効率的に圧縮することはできません。
+\n\nWIA: Dolphin 5.0-12188以降といくつかのプログラムで対応している、高度な圧縮形式です。
+暗号化されたWiiデータを効率的に圧縮できますが、不要なデータ (削除されている場合を除く)
+は圧縮できません。
+\n\nRVZ: Dolphin 5.0-12188以降で対応している、高度な圧縮形式です。
+不要なデータと暗号化されたWiiデータの両方を効率的に圧縮できます。
+    </string>
+
+    <!-- Riivolution Boot Screen -->
+    <string name="riivolution_riivolution">Riivolution</string>
+    <string name="riivolution_sd_root">SDルート: %1$s</string>
+    <string name="riivolution_disabled">無効</string>
+    <string name="riivolution_start">開始</string>
+
+    <!-- Emulation Menu -->
+    <string name="pause_emulation">エミュレーションを一時停止</string>
+    <string name="unpause_emulation">エミュレーションを再開</string>
+    <string name="emulation_screenshot">スクリーンショットを撮影</string>
+    <string name="emulation_savestate">セーブステートを保存</string>
+    <string name="emulation_loadstate">セーブステートを読み込み</string>
+    <string name="emulation_exit">エミュレーションを終了</string>
+    <string name="emulation_state_slot">スロット %1$d\n\n%2$s</string>
+    <string name="emulation_state_slot_empty">スロット %1$d\n\n空</string>
+    <string name="emulation_quicksave">クイックセーブ</string>
+    <string name="emulation_quickload">クイックロード</string>
+    <string name="emulation_refresh_wiimotes">Wiiリモコンを再検出</string>
+    <string name="emulation_overlay_controls">オーバーレイコントロール</string>
+    <string name="emulation_edit_layout">レイアウトを編集</string>
+
+    <string name="emulation_done">完了</string>
+    <string name="emulation_toggle_controls">コントロールを表示/非表示</string>
+    <string name="emulation_latching_controls">ラッチ式コントロール</string>
+    <string name="emulation_toggle_all">すべて切り替え</string>
+    <string name="emulation_control_scale">大きさ</string>
+    <string name="emulation_control_opacity">不透明度</string>
+    <string name="emulation_control_adjustments">コントロールを調整</string>
+    <string name="emulation_control_joystick_rel_center">スティック中心を相対化</string>
+    <string name="emulation_choose_controller">コントローラーを選択</string>
+    <string name="emulation_more_controller_settings">その他の設定</string>
+    <string name="emulation_menu_help">戻るを押すとメニューを開きます。\n戻るを長押しするとエミュレーションを終了します。</string>
+    <string name="emulation_touch_overlay_reset">オーバーレイをリセット</string>
+    <string name="emulation_ir_group">タッチIRポインター</string>
+    <string name="emulation_ir_recenter">常に中心を再設定</string>
+    <string name="emulation_ir_mode">IRモード</string>
+    <string name="emulation_ir_sensitivity">IRの感度</string>
+    <string name="emulation_choose_doubletap">ダブルタップするボタン</string>
+
+    <!-- GC Adapter Menu-->
+    <string name="gc_adapter_rumble">振動を有効にする</string>
+    <string name="gc_adapter_rumble_description">このGameCubeコントローラーの振動機能を有効にします。</string>
+    <string name="gc_adapter_bongos">タルコンガ</string>
+    <string name="gc_adapter_bongos_description">このポートでタルコンガを使用する場合は有効にしてください。</string>
+
+    <string name="path_not_changeable_scoped_storage">Android 11以降のスコープ付きストレージポリシーにより、このパスは変更できません。</string>
+    <string name="load_settings">設定を読み込み中…</string>
+    <string name="setting_not_runtime_editable">この設定はゲームの実行中は変更できません。</string>
+    <string name="ipl_not_found">IPLが見つかりません</string>
+    <string name="setting_clear_info">設定を長押しすると消去できます。</string>
+    <string name="setting_clear_confirm">この設定をデフォルト値に戻しますか?</string>
+    <string name="setting_cleared">設定を消去しました</string>
+    <string name="emulation_change_disc">ディスクを交換</string>
+
+    <string name="external_storage_not_mounted">Dolphinを使用するには外部ストレージが利用可能である必要があります</string>
+
+    <!-- Extra Leanback Homescreen Channels-->
+    <string name="homescreen_favorites">お気に入り</string>
+
+    <string name="select_dir">このディレクトリを選択</string>
+
+    <!-- File Pickers -->
+    <string name="no_file_extension">選択したファイルに拡張子がないようです。\n\nそれでも続行しますか?</string>
+    <string name="wrong_file_extension_single">選択したファイルの拡張子は「%1$s」ですが、「%2$s」が期待されていました。\n\nそれでも続行しますか?</string>
+    <string name="wrong_file_extension_multiple">選択したファイルの拡張子は「%1$s」ですが、次のいずれかの拡張子が期待されていました: %2$s\n\nそれでも続行しますか?</string>
+    <string name="wrong_file_extension_in_directory">選択した場所に互換性のあるファイルが見つかりませんでした。\n\n対応している形式は %1$s です</string>
+    <string name="unavailable_paths">Dolphinには設定された1つ以上のパスにアクセスする権限がありません。開始する前に修正しますか?</string>
+
+    <!-- Misc -->
+    <string name="enabled">有効</string>
+    <string name="default_values">デフォルト値</string>
+    <string name="slider_setting_value">%.0f%2$s</string>
+    <string name="slider_setting_float_value">%.2f%2$s</string>
+    <string name="disc_number">ディスク %1$d</string>
+    <string name="replug_gc_adapter">GameCubeアダプターを開けませんでした。デバイスを抜き差ししてください。</string>
+    <string name="disabled_gc_overlay_notice">選択したGameCubeコントローラーは「なし」に設定されています</string>
+    <string name="ignore_warning_alert_messages">今回のセッションでは無視する</string>
+
+    <!-- UI CPU Core selection -->
+    <string name="jit_recompiler_x86">x86-64用JITリコンパイラ (推奨)</string>
+    <string name="jit_recompiler_arm64">ARM64用JITリコンパイラ (推奨)</string>
+    <string name="cached_interpreter_slower">キャッシュ付きインタプリタ (低速)</string>
+    <string name="cached_interpreter">キャッシュ付きインタプリタ</string>
+    <string name="interpreter_slowest">インタプリタ (最も低速)</string>
+    <string name="interpreter">インタプリタ</string>
+
+    <!-- DSP Emulation Engine -->
+    <string name="dsp_hle">DSP HLE (推奨)</string>
+    <string name="dsp_lle_recompiler">DSP LLEリコンパイラ (低速)</string>
+    <string name="dsp_lle_interpreter">DSP LLEインタプリタ (非常に低速)</string>
+
+    <!-- System Languages -->
+    <string name="language_english">英語</string>
+    <string name="language_german">ドイツ語</string>
+    <string name="language_french">フランス語</string>
+    <string name="language_spanish">スペイン語</string>
+    <string name="language_italian">イタリア語</string>
+    <string name="language_dutch">オランダ語</string>
+    <string name="language_japanese">日本語</string>
+    <string name="language_simplified_chinese">簡体字中国語</string>
+    <string name="language_traditional_chinese">繁体字中国語</string>
+    <string name="language_korean">韓国語</string>
+
+    <!-- Device selection -->
+    <string name="device_nothing">なし</string>
+    <string name="device_dummy">ダミー</string>
+    <string name="device_memory_card">メモリーカード</string>
+    <string name="device_gci_folder">GCIフォルダー</string>
+
+    <!-- Slot SP1 Device selection -->
+    <string name="broadband_adapter_xlink">ブロードバンドアダプター (XLink Kai)</string>
+    <string name="broadband_adapter_hle">ブロードバンドアダプター (HLE)</string>
+    <string name="broadband_adapter_tapserver">ブロードバンドアダプター (Tapserver)</string>
+    <string name="modem_adapter_tapserver">モデムアダプター (Tapserver)</string>
+    <string name="sp1_am_baseboard">Triforceベースボード</string>
+
+    <!-- Sound Mode -->
+    <string name="sound_mode_mono">モノラル</string>
+    <string name="sound_mode_stereo">ステレオ</string>
+    <string name="sound_mode_surround">サラウンド</string>
+
+    <!-- Sensor Bar Position -->
+    <string name="sensor_position_top">上</string>
+    <string name="sensor_position_bottom">下</string>
+
+    <!-- Log Verbosity selection based on LogLevel in Common/Logging/Log.h -->
+    <string name="log_notice">通知</string>
+    <string name="log_error">エラー</string>
+    <string name="log_warning">警告</string>
+    <string name="log_info">情報</string>
+    <string name="log_debug">デバッグ</string>
+
+    <!-- Video backend selection -->
+    <string name="backend_opengl">OpenGL</string>
+    <string name="backend_vulkan">Vulkan</string>
+    <string name="backend_software">ソフトウェア</string>
+    <string name="backend_null">Null</string>
+
+    <!-- Wii Remote extensions -->
+    <string name="extension_none">なし</string>
+    <string name="extension_nunchuk">ヌンチャク</string>
+    <string name="extension_classic">クラシックコントローラー</string>
+    <string name="extension_guitar">ギター</string>
+    <string name="extension_drums">ドラム</string>
+    <string name="extension_turntable">ターンテーブル</string>
+
+    <!-- Accuracy Preference -->
+    <string name="accuracy_fast">高速</string>
+    <string name="accuracy_medium">中</string>
+    <string name="accuracy_safe">安全</string>
+
+    <!-- Shader Compilation Mode Preference -->
+    <string name="shader_compilation_specialized">専用 (デフォルト)</string>
+    <string name="shader_compilation_exclusive_ubershaders">Ubershadersのみ</string>
+    <string name="shader_compilation_hybrid_ubershaders">ハイブリッドUbershaders</string>
+    <string name="shader_compilation_skip_drawing">描画をスキップ</string>
+
+    <!-- Shader Compilation Mode Dynamic Descriptions -->
+    <string name="shader_compilation_specialized_description">専用 (デフォルト): Ubershadersは一切使用しません。シェーダーのコンパイル中にスタッターが発生しますが、GPUへの要求は低くなります。ローエンドハードウェアに推奨します。わからない場合はこのモードを選択してください。</string>
+    <string name="shader_compilation_exclusive_ubershaders_description">Ubershadersのみ: Ubershadersを常に使用します。非常に高いGPU性能を要求する代わりに、スタッターのほぼない体験を提供します。ハイブリッドUbershadersでスタッターが発生し、非常に強力なGPUを持っている場合を除き、使用しないでください。</string>
+    <string name="shader_compilation_hybrid_ubershaders_description">ハイブリッドUbershaders: シェーダーのコンパイル中のスタッターを防ぐためにUbershadersを使用しますが、スタッターが発生しない場合は専用シェーダーを使用します。最良の場合はシェーダーコンパイルのスタッターを排除しつつパフォーマンスへの影響を最小限に抑えられますが、結果はビデオドライバーの動作に依存します。</string>
+    <string name="shader_compilation_skip_drawing_description">描画をスキップ: 待機中のオブジェクトを描画しないことでシェーダーコンパイルのスタッターを防ぎます。Ubershadersが効果を発揮しない状況でも機能することがありますが、視覚的な不具合や壊れたエフェクトが発生します。おすすめしません。他のオプションでお使いのシステムが良好な結果を得られない場合にのみ使用してください。</string>
+
+    <!-- Internal Resolution Preference -->
+    <string name="resolution_one_native">1xネイティブ (640x528)</string>
+    <string name="resolution_two_native">2xネイティブ (1280x1056) 720p向け</string>
+    <string name="resolution_three_native">3xネイティブ (1920x1584) 1080p向け</string>
+    <string name="resolution_four_native">4xネイティブ (2560x2112)</string>
+    <string name="resolution_five_native">5xネイティブ (3200x2640)</string>
+    <string name="resolution_six_native">6xネイティブ (3840x3168) 4K向け</string>
+
+    <!-- Multiple preference -->
+    <string name="multiple_off">オフ</string>
+    <string name="multiple_one">1x</string>
+    <string name="multiple_two">2x</string>
+    <string name="multiple_four">4x</string>
+    <string name="multiple_eight">8x</string>
+    <string name="multiple_sixteen">16x</string>
+
+    <!-- Texture Filtering Preference -->
+    <string name="filtering_default">デフォルト</string>
+
+    <string name="filtering_nearest">ニアレストを強制</string>
+    <string name="filtering_linear">リニアを強制</string>
+
+    <!-- Stereoscopy Preference -->
+    <string name="stereoscopy_off">オフ</string>
+    <string name="stereoscopy_side_by_side">サイドバイサイド</string>
+    <string name="stereoscopy_top_and_bottom">トップアンドボトム</string>
+    <string name="stereoscopy_anaglyph">アナグリフ</string>
+
+    <!-- Aspect Ratio Preference -->
+    <string name="aspect_ratio_auto">自動</string>
+    <string name="aspect_ratio_force_sixteen_by_nine">16:9を強制</string>
+    <string name="aspect_ratio_force_four_by_three">4:3を強制</string>
+    <string name="aspect_ratio_stretch">ウィンドウに合わせて拡大</string>
+
+    <!-- Country Names -->
+    <string name="country_europe">ヨーロッパ</string>
+    <string name="country_japan">日本</string>
+    <string name="country_usa">アメリカ</string>
+    <string name="country_australia">オーストラリア</string>
+    <string name="country_france">フランス</string>
+    <string name="country_germany">ドイツ</string>
+    <string name="country_italy">イタリア</string>
+    <string name="country_korea">韓国</string>
+    <string name="country_netherlands">オランダ</string>
+    <string name="country_russia">ロシア</string>
+    <string name="country_spain">スペイン</string>
+    <string name="country_taiwan">台湾</string>
+    <string name="country_world">ワールド</string>
+    <string name="country_unknown">不明</string>
+
+    <!-- GameCube Gamepad Types -->
+    <string name="gcpad_disabled">なし</string>
+    <string name="gcpad_emulated">標準コントローラー</string>
+    <string name="gcpad_keyboard">キーボードコントローラー</string>
+    <string name="gcpad_steering_wheel">ステアリングホイール</string>
+    <string name="gcpad_dance_mat">ダンスマット</string>
+    <string name="gcpad_taru_konga">タルコンガ</string>
+    <string name="gcpad_am_baseboard">Triforceベースボード</string>
+    <string name="gcpad_gc_adapter">GameCubeアダプター</string>
+
+    <!-- Wiimote Types -->
+    <string name="wiimote_disabled">なし</string>
+    <string name="wiimote_emulated">エミュレートされたWiiリモコン</string>
+    <string name="wiimote_real">実機のWiiリモコン (DolphinBarが必要)</string>
+
+    <!-- Gamepad Controls -->
+    <string name="gamepad_start">スタート</string>
+    <string name="gamepad_d_pad">十字ボタン</string>
+    <string name="gamepad_main_stick">メインスティック</string>
+    <string name="gamepad_c_stick">Cスティック</string>
+    <string name="gamepad_home">ホーム</string>
+    <string name="gamepad_nunchuk_stick">ヌンチャクスティック</string>
+    <string name="gamepad_left_stick">左スティック</string>
+    <string name="gamepad_right_stick">右スティック</string>
+
+    <!-- IR Modes -->
+    <string name="ir_disabled">無効</string>
+    <string name="ir_follow">追従</string>
+    <string name="ir_drag">ドラッグ</string>
+
+    <!-- Double Tap Buttons -->
+    <string name="double_tap_a">Aボタン</string>
+    <string name="double_tap_b">Bボタン</string>
+    <string name="double_tap_2">2ボタン</string>
+    <string name="double_tap_classic_a">クラシックA</string>
+
+    <!-- Orientations -->
+    <string name="orientation_landscape">横向き</string>
+    <string name="orientation_landscape_reverse">横向き (反転)</string>
+    <string name="orientation_portrait">縦向き</string>
+    <string name="orientation_auto">自動</string>
+
+    <!-- Themes -->
+    <string name="theme_default">デフォルト</string>
+    <string name="theme_material_you">Material You</string>
+    <string name="theme_material_default">Materialデフォルト</string>
+    <string name="theme_green">グリーン</string>
+    <string name="theme_pink">ピンク</string>
+
+    <!-- Theme Modes -->
+    <string name="theme_mode_follow_system">システムに合わせる</string>
+    <string name="theme_mode_light">ライト</string>
+    <string name="theme_mode_dark">ダーク</string>
+
+    <!-- Synchronize GPU Thread Options -->
+    <string name="sync_gpu_never">しない</string>
+    <string name="sync_gpu_idle">アイドルスキップ時</string>
+    <string name="sync_gpu_always">常に</string>
+
+    <!-- Motion Control Options -->
+    <string name="motion_device_with_pointer">デバイスセンサーを使用 (ポインターエミュレーションあり)</string>
+    <string name="motion_device_without_pointer">デバイスセンサーを使用 (ポインターエミュレーションなし)</string>
+    <string name="motion_no_device">デバイスセンサーを使用しない</string>
+
+    <!-- Block sizes -->
+    <string name="block_size_32_kib">32 KiB</string>
+    <string name="block_size_64_kib">64 KiB</string>
+    <string name="block_size_128_kib">128 KiB</string>
+    <string name="block_size_256_kib">256 KiB</string>
+    <string name="block_size_512_kib">512 KiB</string>
+    <string name="block_size_1_mib">1 MiB</string>
+    <string name="block_size_2_mib">2 MiB</string>
+
+    <!-- Compression Options -->
+    <string name="compression_none">圧縮なし</string>
+    <string name="compression_purge">Purge</string>
+    <string name="compression_deflate">Deflate</string>
+    <string name="compression_bzip2">bzip2 (低速)</string>
+    <string name="compression_lzma">LZMA (低速)</string>
+    <string name="compression_lzma2">LZMA2 (低速)</string>
+    <string name="compression_zstandard">Zstandard (推奨)</string>
+
+    <!-- About dialog -->
+    <string name="about_dolphin">Dolphin</string>
+    <string name="wark">WARK WARK WARK</string>
+    <string name="about_dolphin_image">Dolphinのロゴ</string>
+    <string name="about_branch">ブランチ:\n%s</string>
+    <string name="about_revision">リビジョン:\n%s</string>
+    <string name="about_dolphin_description">Dolphinは、無料のオープンソースのGameCubeおよびWiiエミュレータです。\n\nこのソフトウェアは、合法的に所有していないゲームをプレイするために使用しないでください。</string>
+    <string name="about_website">
+        <a href="https://dolphin-emu.org/">ウェブサイト</a>
+    </string>
+    <string name="about_github">
+        <a href="https://github.com/dolphin-emu/dolphin">GitHub</a>
+    </string>
+    <string name="about_support">
+        <a href="https://forums.dolphin-emu.org/">サポート</a>
+    </string>
+    <string name="about_copyright_warning">\u00A9 2003–2024+ Dolphin Team。「GameCube」および「Wii」は任天堂の商標です。Dolphinは任天堂といかなる関係もありません。</string>
+    <string name="system_driver">システムドライバー</string>
+    <string name="system_driver_desc">OSの一部であるGPUドライバー。</string>
+
+    <!-- Custom GPU drivers -->
+    <string name="gpu_driver_dialog_title">Dolphinで使用するGPUドライバーを選択</string>
+    <string name="gpu_driver_dialog_system">デフォルト</string>
+    <string name="gpu_driver_dialog_install">ドライバーをインストール</string>
+    <string name="gpu_driver_dialog_uninstall_done">システムドライバーへの切り替えに成功しました</string>
+    <string name="gpu_driver_submenu">GPUドライバー</string>
+    <string name="gpu_driver_install_inprogress">GPUドライバーをインストールしています…</string>
+    <string name="gpu_driver_install_success">GPUドライバーをインストールしました</string>
+    <string name="gpu_driver_install_invalid_archive">指定されたドライバーパッケージを展開できませんでした</string>
+    <string name="gpu_driver_install_missing_metadata">指定されたドライバーパッケージはメタデータが不足しているため無効です。</string>
+    <string name="gpu_driver_install_invalid_metadata">指定されたドライバーパッケージのメタデータが無効です。壊れている可能性があります。</string>
+    <string name="gpu_driver_install_unsupported_android_version">お使いのデバイスは、指定されたドライバーに必要な最低Androidバージョンを満たしていません。</string>
+    <string name="gpu_driver_install_already_installed">指定されたドライバーパッケージはすでにインストールされています。</string>
+    <string name="gpu_driver_install_file_not_found">選択したファイルが見つからないか、アクセスできませんでした。</string>
+
+    <!-- Emulated USB Devices -->
+    <string name="emulated_usb_devices">エミュレートされたUSBデバイス</string>
+    <string name="emulate_skylander_portal">Skylandersポータル</string>
+    <string name="skylanders_manager">Skylandersマネージャー</string>
+    <string name="create_skylander_title">Skylanderを作成</string>
+    <string name="skylander_label">Skylander</string>
+    <string name="skylander_slot">スロット %1$d</string>
+    <string name="skylander_id">ID</string>
+    <string name="skylander_variant">バリアント</string>
+    <string name="invalid_skylander">無効なSkylanderの選択</string>
+    <string name="skylander_load_failed">Skylanderフィギュアの読み込みに失敗しました</string>
+
+    <string name="emulate_infinity_base">Infinity Base</string>
+    <string name="infinity_manager">Infinityマネージャー</string>
+    <string name="load_figure">読み込み</string>
+    <string name="remove_figure">取り外し</string>
+    <string name="create_figure">作成</string>
+    <string name="create_figure_title">フィギュアを作成</string>
+    <string name="infinity_label">Infinityフィギュア</string>
+    <string name="infinity_number">フィギュア番号</string>
+    <string name="invalid_infinity_figure">無効なフィギュアの選択</string>
+    <string name="infinity_hexagon_label">パワーディスク/プレイセット</string>
+    <string name="infinity_power_hex_two_label">パワーディスク2</string>
+    <string name="infinity_power_hex_three_label">パワーディスク3</string>
+    <string name="infinity_p1_label">プレイヤー1</string>
+    <string name="infinity_p2_label">プレイヤー2</string>
+    <string name="infinity_p1a1_label">P1アビリティ1</string>
+    <string name="infinity_p2a1_label">P2アビリティ1</string>
+    <string name="infinity_p1a2_label">P1アビリティ2</string>
+    <string name="infinity_p2a2_label">P2アビリティ2</string>
+    <string name="incompatible_figure_selected">互換性のないフィギュアが選択されています</string>
+    <string name="select_compatible_figure">互換性のあるフィギュアファイルを選択してください</string>
+
+    <string name="emulate_wii_speak">Wiiスピーク</string>
+    <string name="mute_wii_speak">Wiiスピークをミュート</string>
+    <string name="wii_speak_permission_warning">マイクの権限がありません</string>
+    <string name="wii_speak_permission_warning_description">Wiiスピークのエミュレーションにはマイクの権限が必要です。権限を有効にするにはゲームを再起動する必要がある場合があります。</string>
+
+    <!-- Achievements -->
+    <string name="achievements_enabled">実績を有効にする</string>
+    <string name="achievements_hardcore_enabled">ハードコアモードを有効にする</string>
+    <string name="achievements_unofficial_enabled">非公式の実績を有効にする</string>
+    <string name="achievements_encore_enabled">アンコールモードを有効にする</string>
+    <string name="achievements_spectator_enabled">スペクテイターモードを有効にする</string>
+    <string name="achievements_leaderboard_tracker_enabled">リーダーボードトラッカーを表示</string>
+    <string name="achievements_challenge_indicators_enabled">チャレンジインジケーターを表示</string>
+    <string name="achievements_progress_enabled">進行状況の通知を有効にする</string>
+    <string name="achievements_username">ユーザー名</string>
+    <string name="achievements_password">パスワード</string>
+    <string name="achievements_login">ログイン</string>
+    <string name="achievements_logout">ログアウト</string>
+    <string name="achievements_login_in_progress">ログイン中</string>
+    <string name="achievements_login_failed">ログインに失敗しました</string>
+
+    <!-- Netplay -->
+    <string name="netplay_setup_title">ネットプレイの設定</string>
+    <string name="netplay_connection_type">接続タイプ</string>
+    <string name="netplay_connection_type_direct_connection">直接接続</string>
+    <string name="netplay_connection_type_traversal_server">トラバーサルサーバー</string>
+    <string name="netplay_connection_role_connect">接続</string>
+    <string name="netplay_connection_role_connect_loading">接続中…</string>
+    <string name="netplay_connection_role_host">ホスト</string>
+    <string name="netplay_connection_role_host_loading">開始中…</string>
+    <string name="netplay_nickname_label">ニックネーム</string>
+    <string name="netplay_ip_address_label">IPアドレス</string>
+    <string name="netplay_host_code_label">ホストコード</string>
+    <string name="netplay_port_label">ポート</string>
+    <string name="netplay_title">ネットプレイ</string>
+    <string name="netplay_start">開始</string>
+    <string name="netplay_start_warning_title">警告</string>
+    <string name="netplay_start_warning_not_all_players_have_game">すべてのプレイヤーがゲームを持っているわけではありません。本当に開始しますか?</string>
+    <string name="netplay_dual_core_warning_title">デュアルコア有効</string>
+    <string name="netplay_dual_core_warning_message">ネットプレイ中のデュアルコアはおすすめしません。パフォーマンスの問題を引き起こしたり、一部のゲームが起動できなくなったりすることがあります。</string>
+    <string name="netplay_dont_warn_again">次回から警告しない</string>
+    <string name="netplay_chat_label">チャット</string>
+    <string name="netplay_chat_send">送信</string>
+    <string name="netplay_message_game_changed">ゲームが%1$sに変更されました</string>
+    <string name="netplay_message_buffer_changed">バッファサイズが%1$dに変更されました</string>
+    <string name="netplay_message_host_input_authority_changed">"ホスト入力権限 %1$s"</string>
+    <string name="netplay_message_desync">デシンクが発生した可能性があります: %1$sが%2$dフレーム目でデシンクした可能性があります</string>
+    <string name="netplay_game_label">ゲーム</string>
+    <string name="netplay_players_label">プレイヤー</string>
+    <string name="netplay_players_name">名前</string>
+    <string name="netplay_players_ping">Ping</string>
+    <string name="netplay_players_mapping">割り当て</string>
+    <string name="netplay_controllers_gamecube">GameCube</string>
+    <string name="netplay_controllers_wii_remotes">Wiiリモコン</string>
+    <string name="netplay_controllers_port">ポート %1$d</string>
+    <string name="netplay_controllers_remote">リモコン %1$d</string>
+    <string name="netplay_controllers_none">なし</string>
+    <string name="netplay_network_mode_label">入力モード</string>
+    <string name="netplay_network_mode_fair_input_delay">フェア入力遅延</string>
+    <string name="netplay_network_mode_host_input_authority">ホスト入力権限</string>
+    <string name="netplay_network_mode_golf">ゴルフモード</string>
+    <string name="netplay_buffer">バッファ</string>
+    <string name="netplay_client_buffer">最大バッファ</string>
+    <string name="netplay_connection_lost">ネットプレイの接続が切断されました</string>
+    <string name="netplay_save_transfer_progress_close">閉じる</string>
+    <string name="netplay_game_digest_match">ハッシュが一致しました</string>
+    <string name="netplay_game_digest_mismatch">ハッシュが一致しません</string>
+    <string name="netplay_game_digest_close">閉じる</string>
+    <string name="netplay_host_port_label">ポート</string>
+    <string name="netplay_use_upnp">ポートを解放 (UPnP)</string>
+    <string name="netplay_host_address_label">参加情報</string>
+    <string name="netplay_address_label">アドレス</string>
+    <string name="netplay_code_label">コード</string>
+    <string name="netplay_address_type_room_id">ルーム</string>
+    <string name="netplay_address_type_external">外部</string>
+    <string name="netplay_address_type_local">ローカル</string>
+    <string name="netplay_traversal_error_bad_host">中央サーバーを参照できませんでした</string>
+    <string name="netplay_traversal_error_version_too_old">Dolphinが古すぎてトラバーサルサーバーを使用できません</string>
+    <string name="netplay_address_loading">読み込み中…</string>
+    <string name="netplay_address_unknown">不明</string>
+    <string name="netplay_address_share">アドレスを共有</string>
+    <string name="netplay_address_retry">再試行</string>
+    <string name="netplay_transfer_progress">%1$s/%2$s MiB</string>
+    <string name="save_sync_submenu">セーブデータの同期</string>
+    <string name="save_sync_enabled">Driveフォルダーとセーブデータを同期</string>
+    <string name="save_sync_enabled_description">書き込み時にGameCubeメモリーカードとセーブステートを選択したフォルダー (Google Driveのフォルダーなど) に自動的にアップロードします。</string>
+    <string name="save_sync_select_folder">同期フォルダーを選択</string>
+    <string name="save_sync_select_folder_description">同期するフォルダーを選択します。GCサブフォルダーとStateSavesサブフォルダーが含まれている必要があります (Google Drive上など)。</string>
+    <string name="save_sync_folder_selected">同期フォルダーを選択しました</string>
+    <string name="save_sync_import_now">今すぐ同期フォルダーからインポート</string>
+    <string name="save_sync_import_now_description">より新しいGCメモリーカードとセーブステートを同期フォルダーからダウンロードします。ローカルファイルは上書きされる前にタイムスタンプ付きでバックアップされます。</string>
+    <string name="save_sync_import_now_confirmation">選択したフォルダーからセーブファイルをインポートしますか? より新しいリモートファイルがローカルファイルを上書きします (ローカルのバックアップは保持されます)。</string>
+    <string name="save_sync_importing">セーブファイルをインポート中…</string>
+</resources>
