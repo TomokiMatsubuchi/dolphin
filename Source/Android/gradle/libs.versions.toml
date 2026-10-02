@@ -58,6 +58,7 @@ androidx-swiperefreshlayout = { group = "androidx.swiperefreshlayout", name = "s
 androidx-tvprovider = { group = "androidx.tvprovider", name = "tvprovider", version.ref = "tvprovider" }
 androidx-uiautomator = { group = "androidx.test.uiautomator", name = "uiautomator", version.ref = "uiautomator" }
 coil = { group = "io.coil-kt", name = "coil", version.ref = "coil" }
+documentfile = { group = "androidx.documentfile", name = "documentfile", version = "1.0.1" }
 coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
 desugar_jdk_libs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "desugar_jdk_libs" }
 filepicker = { group = "com.nononsenseapps", name = "filepicker", version.ref = "filepicker" }

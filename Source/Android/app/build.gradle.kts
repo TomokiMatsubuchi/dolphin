@@ -160,6 +160,9 @@ dependencies {
 
     implementation(libs.filepicker)
 
+    // For access to user-selected document trees (save sync)
+    implementation(libs.documentfile)
+
     // Jetpack Compose
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)

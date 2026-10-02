@@ -1062,4 +1062,14 @@ It can efficiently compress both junk data and encrypted Wii data.
     <string name="netplay_address_share">Share address</string>
     <string name="netplay_address_retry">Retry</string>
     <string name="netplay_transfer_progress">%1$s/%2$s MiB</string>
+    <string name="save_sync_submenu">Save Sync</string>
+    <string name="save_sync_enabled">Sync saves with Drive folder</string>
+    <string name="save_sync_enabled_description">Automatically upload GameCube memory cards and save states to the selected folder (e.g. a Google Drive folder) when they are written.</string>
+    <string name="save_sync_select_folder">Select sync folder</string>
+    <string name="save_sync_select_folder_description">Choose the folder to sync with. It should contain GC and StateSaves subfolders (e.g. on Google Drive).</string>
+    <string name="save_sync_folder_selected">Sync folder selected</string>
+    <string name="save_sync_import_now">Import from sync folder now</string>
+    <string name="save_sync_import_now_description">Download newer GC memory cards and save states from the sync folder. Local files are backed up with a timestamp before being overwritten.</string>
+    <string name="save_sync_import_now_confirmation">Import save files from the selected folder? Newer remote files will overwrite local ones (local backups are kept).</string>
+    <string name="save_sync_importing">Importing save files…</string>
 </resources>

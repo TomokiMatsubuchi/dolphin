@@ -8,6 +8,7 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.text.TextUtils
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.collection.ArraySet
 import kotlinx.coroutines.CoroutineScope
@@ -46,6 +47,7 @@ import org.dolphinemu.dolphinemu.features.settings.model.PostProcessing
 import org.dolphinemu.dolphinemu.features.settings.model.ScaledIntSetting
 import org.dolphinemu.dolphinemu.features.settings.model.Settings
 import org.dolphinemu.dolphinemu.features.settings.model.StringSetting
+import org.dolphinemu.dolphinemu.features.savesync.SaveSyncManager
 import org.dolphinemu.dolphinemu.features.settings.model.view.DateTimeChoiceSetting
 import org.dolphinemu.dolphinemu.features.settings.model.view.DirectoryPicker
 import org.dolphinemu.dolphinemu.features.settings.model.view.FilePicker
@@ -296,6 +298,7 @@ class SettingsFragmentPresenter(
                 MenuTag.CONFIG_GAME_CUBE -> addGameCubeSettings(sl)
                 MenuTag.CONFIG_WII -> addWiiSettings(sl)
                 MenuTag.CONFIG_ACHIEVEMENTS -> addAchievementSettings(sl)
+                MenuTag.SAVE_SYNC -> addSaveSyncSettings(sl)
                 MenuTag.CONFIG_ADVANCED -> addAdvancedSettings(sl)
                 MenuTag.GRAPHICS -> addGraphicsSettings(sl)
                 MenuTag.CONFIG_SERIALPORT1 -> addSerialPortSubSettings(
@@ -368,6 +371,7 @@ class SettingsFragmentPresenter(
         sl.add(SubmenuSetting(context, R.string.advanced_submenu, MenuTag.CONFIG_ADVANCED))
         sl.add(SubmenuSetting(context, R.string.log_submenu, MenuTag.CONFIG_LOG))
         sl.add(SubmenuSetting(context, R.string.debug_submenu, MenuTag.DEBUG))
+        sl.add(SubmenuSetting(context, R.string.save_sync_submenu, MenuTag.SAVE_SYNC))
         sl.add(
             RunRunnable(
                 context, R.string.user_data_submenu, 0, 0, 0, false
@@ -1080,6 +1084,64 @@ class SettingsFragmentPresenter(
                 context, BooleanSetting.MAIN_WII_SPEAK_MUTED, R.string.mute_wii_speak, 0
             )
         )
+    }
+
+    private fun addSaveSyncSettings(sl: ArrayList<SettingsItem>) {
+        fragmentView.activityResultLaunchers.onSaveSyncFolderSelected = { uri ->
+            SaveSyncManager.setTreeUri(context, uri)
+            Toast.makeText(context, R.string.save_sync_folder_selected, Toast.LENGTH_SHORT).show()
+        }
+        val saveSyncEnabledSetting: AbstractBooleanSetting = object : AbstractBooleanSetting {
+            override val isOverridden: Boolean
+                get() = false
+
+            override val isRuntimeEditable: Boolean
+                get() = true
+
+            override fun delete(settings: Settings): Boolean {
+                SaveSyncManager.setEnabled(context, false)
+                return true
+            }
+
+            override val boolean: Boolean
+                get() = SaveSyncManager.isEnabled(context)
+
+            override fun setBoolean(settings: Settings, newValue: Boolean) {
+                SaveSyncManager.setEnabled(context, newValue)
+            }
+        }
+        sl.add(
+            SwitchSetting(
+                context,
+                saveSyncEnabledSetting,
+                R.string.save_sync_enabled,
+                R.string.save_sync_enabled_description
+            )
+        )
+        sl.add(
+            RunRunnable(
+                context,
+                R.string.save_sync_select_folder,
+                R.string.save_sync_select_folder_description,
+                0,
+                0,
+                false
+            ) { fragmentView.activityResultLaunchers.requestSaveSyncFolder.launch(null) })
+        sl.add(
+            RunRunnable(
+                context,
+                R.string.save_sync_import_now,
+                R.string.save_sync_import_now_description,
+                R.string.save_sync_import_now_confirmation,
+                0,
+                false
+            ) {
+                ThreadUtil.runOnThreadAndShowResult(
+                    fragmentView.fragmentActivity,
+                    R.string.save_sync_importing,
+                    0,
+                    { SaveSyncManager.pullFromRemote(context) })
+            })
     }
 
     private fun addAchievementSettings(sl: ArrayList<SettingsItem>) {

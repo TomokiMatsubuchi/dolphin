@@ -49,6 +49,7 @@ import org.dolphinemu.dolphinemu.features.settings.model.Settings
 import org.dolphinemu.dolphinemu.features.settings.model.StringSetting
 import org.dolphinemu.dolphinemu.features.settings.ui.MenuTag
 import org.dolphinemu.dolphinemu.features.settings.ui.SettingsActivity
+import org.dolphinemu.dolphinemu.features.savesync.SaveSyncWatcher
 import org.dolphinemu.dolphinemu.features.skylanders.SkylanderConfig
 import org.dolphinemu.dolphinemu.features.skylanders.model.Skylander
 import org.dolphinemu.dolphinemu.features.skylanders.ui.SkylanderSlot
@@ -87,6 +88,7 @@ class EmulationActivity : AppCompatActivity(), ThemeProvider {
     private var infinityFigureData = Figure(-1, "Position")
     private var skylanderSlot = -1
     private var infinityPosition = -1
+    private var saveSyncWatcher: SaveSyncWatcher? = null
     private lateinit var skylandersBinding: DialogNfcFiguresManagerBinding
     private lateinit var infinityBinding: DialogNfcFiguresManagerBinding
 
@@ -318,12 +320,27 @@ class EmulationActivity : AppCompatActivity(), ThemeProvider {
             DirectoryInitialization.start(this);
         }
 
+        if (DirectoryInitialization.areDolphinDirectoriesReady()) {
+            if (saveSyncWatcher == null) {
+                saveSyncWatcher = SaveSyncWatcher(applicationContext)
+            }
+            saveSyncWatcher?.start()
+        }
+
         DolphinSensorEventListener.setDeviceRotation(windowManager.defaultDisplay.rotation)
     }
 
     override fun onStop() {
         super.onStop()
         settings.saveSettings()
+        saveSyncWatcher?.stop()
+        Thread({
+            try {
+                org.dolphinemu.dolphinemu.features.savesync.SaveSyncManager.pushLocalChanges(applicationContext)
+            } catch (e: Exception) {
+                android.util.Log.w("EmulationActivity", "Save sync on stop failed", e)
+            }
+        }, "SaveSyncPush").start()
     }
 
     fun onTitleChanged() {
@@ -339,6 +356,13 @@ class EmulationActivity : AppCompatActivity(), ThemeProvider {
             emulationFragment?.refreshInputOverlay()
 
             updateDisplaySettings()
+
+            if (DirectoryInitialization.areDolphinDirectoriesReady()) {
+                if (saveSyncWatcher == null) {
+                    saveSyncWatcher = SaveSyncWatcher(applicationContext)
+                }
+                saveSyncWatcher?.start()
+            }
         } catch (_: IllegalStateException) {
             // Most likely the core delivered an onTitleChanged while emulation was shutting down.
             // Let's just ignore it, since we're about to shut down anyway.

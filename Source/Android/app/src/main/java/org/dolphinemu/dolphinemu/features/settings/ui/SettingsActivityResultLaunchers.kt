@@ -4,6 +4,7 @@ package org.dolphinemu.dolphinemu.features.settings.ui
 
 import android.app.Activity
 import android.content.Intent
+import android.util.Log
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
@@ -64,6 +65,22 @@ class SettingsActivityResultLaunchers(
         )
     }
 
+    var onSaveSyncFolderSelected: ((android.net.Uri) -> Unit)? = null
+
+    val requestSaveSyncFolder = fragment.registerForActivityResult(
+        ActivityResultContracts.OpenDocumentTree()
+    ) { uri: android.net.Uri? ->
+        if (uri != null) {
+            val takeFlags = Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION
+            try {
+                fragment.requireContext().contentResolver.takePersistableUriPermission(uri, takeFlags)
+            } catch (e: SecurityException) {
+                Log.w(TAG, "Provider does not support persistable URI permissions for $uri", e)
+            }
+            onSaveSyncFolderSelected?.invoke(uri)
+        }
+    }
+
     private fun onFileResult(result: ActivityResult, validExtensions: Set<String>, flags: Int) {
         val intent = result.data
         val uri = intent?.data
@@ -76,5 +93,9 @@ class SettingsActivityResultLaunchers(
                 getAdapter()?.onFilePickerConfirmation(canonicalizedUri.toString())
             }
         }
+    }
+
+    companion object {
+        private const val TAG = "SettingsResultLaunchers"
     }
 }
